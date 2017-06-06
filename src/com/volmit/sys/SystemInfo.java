@@ -10,7 +10,6 @@ import org.bukkit.event.server.ServerCommandEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.hyperic.sigar.CpuPerc;
 import org.hyperic.sigar.Sigar;
-import org.hyperic.sigar.SigarException;
 import com.volmit.sys.util.C;
 import com.volmit.sys.util.F;
 import com.volmit.sys.util.FU;
@@ -123,7 +122,7 @@ public class SystemInfo extends JavaPlugin implements Listener
 				}
 			}
 			
-			catch(SigarException e1)
+			catch(Exception e1)
 			{
 				e1.printStackTrace();
 			}
